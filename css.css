@@ -105,6 +105,10 @@ article>p>span{
     font-size: 4em;
 }
 
+#schoolBar{
+    
+}
+
 #clubBar{
 
 }
@@ -124,6 +128,15 @@ article>p>span{
     transform: rotate(2deg);
 }
 
-#schoolBar{
-    
+
+
+@media only screen and (max-width : 900px) {
+    ul#topList>li.left{
+        position: relative;
+        margin: 0 auto;
+    }
+    ul#topList>li.right{
+        display: none;
+    }
+
 }
