@@ -14,6 +14,27 @@ addEventListener('scroll', () => {
     }
     else {
         topBar.style.boxShadow = '0px 0px 0px #416275';
-        topBar.style.height = (window.innerHeight-scrollY)+'px';
+        topBar.style.height = (window.innerHeight - scrollY) + 'px';
     }
+})
+
+var menu = document.getElementById('menu');
+var menuBar = document.getElementById('menuBar');
+var body = document.body;
+var toggle = 0;
+menu.addEventListener('click', () => {
+    if (scrollY > 0) {
+        if (toggle) {
+            toggle = 0;
+            menuBar.style.right = '-40%';
+        }
+        else {
+            toggle = 1;
+            menuBar.style.right = '0';
+        }
+    }
+})
+menuBar.addEventListener('click', () => {
+    toggle = 0;
+    menuBar.style.right = '-40%';
 })
