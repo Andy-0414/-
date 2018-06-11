@@ -102,8 +102,12 @@ span.jump{
 }
 span.jump:hover{
     text-shadow: 0px 0px 10px white;
+    font-size: 1.2em;
 }
-
+a{
+    text-decoration: none;
+    color: #E8F8FF;
+}
 #mainView{
     width: 100%;
     height: 100%;
@@ -124,6 +128,10 @@ article>h1{
 }
 article>p{
     font-size: 4em;
+}
+article>p::before{
+    color: #91C9E8;
+    content: " ◆ ";
 }
 article>p>span{
     font-size: 0.5em;
