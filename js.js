@@ -38,3 +38,26 @@ menuBar.addEventListener('click', () => {
     toggle = 0;
     menuBar.style.right = '-40%';
 })
+
+var jumpList = document.getElementsByClassName('jump');
+
+jumpList[0].addEventListener('click', () => {
+    document.querySelector("#imgBar").scrollIntoView({
+        behavior: 'smooth'
+    });
+})
+jumpList[1].addEventListener('click', () => {
+    document.querySelector("#schoolBar").scrollIntoView({
+        behavior: 'smooth'
+    });
+})
+jumpList[2].addEventListener('click', () => {
+    document.querySelector("#clubBar").scrollIntoView({
+        behavior: 'smooth'
+    });
+})
+jumpList[3].addEventListener('click', () => {
+    document.querySelector("#likeBar").scrollIntoView({
+        behavior: 'smooth'
+    });
+})
