@@ -1,6 +1,9 @@
 var topBar = document.getElementById('topBar');
 var aside = document.getElementById('ad');
 var vi = document.getElementsByTagName('video')[0];
+vi.oncanplaythrough = ()=>{
+    vi.play();
+}
 addEventListener('scroll', () => {
     if (scrollY > 0) {
         topBar.style.top = '0px';
@@ -10,7 +13,6 @@ addEventListener('scroll', () => {
     else {
         topBar.style.opacity = '0';
         vi.play();
-        
     }
     var userH = window.innerHeight * 0.9
     if (scrollY > userH) {
