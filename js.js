@@ -45,7 +45,6 @@ menuBar.addEventListener('click', () => {
 })
 
 var jumpList = document.getElementsByClassName('jump');
-
 jumpList[0].addEventListener('click', () => {
     document.querySelector("#imgBar").scrollIntoView({
         behavior: 'smooth'
@@ -63,6 +62,16 @@ jumpList[2].addEventListener('click', () => {
 })
 jumpList[3].addEventListener('click', () => {
     document.querySelector("#likeBar").scrollIntoView({
+        behavior: 'smooth'
+    });
+})
+jumpList[4].addEventListener('click', () => {
+    document.querySelector("#useBar").scrollIntoView({
+        behavior: 'smooth'
+    });
+})
+jumpList[5].addEventListener('click', () => {
+    document.querySelector("#languageBar").scrollIntoView({
         behavior: 'smooth'
     });
 })

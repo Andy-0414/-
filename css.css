@@ -72,6 +72,12 @@ ul#topList>li.right{
 
     font-size: 3em;
 }
+#menu{
+    transition: 0.5s;
+}
+#menu:hover{
+    text-shadow: 0px 0px 10px #B4DCED
+}
 #menuBar{
     position: fixed;
 
@@ -108,7 +114,6 @@ span.jump:hover{
 }
 a{
     text-decoration: none;
-    color: #E8F8FF;
 }
 #ad{
     position: fixed;
@@ -157,11 +162,11 @@ article>h1{
     font-size: 4em;
 }
 article>p{
-    font-size: 4em;
+    font-size: 3.5em;
 }
 article>p::before{
     color: #91C9E8;
-    content: " ◆ ";
+    content: " ▶ ";
 }
 article>p>span{
     font-size: 0.5em;
@@ -202,14 +207,18 @@ article>p>span{
     transform: rotate(2deg);
 }
 
+#useBar{
+
+}
+
 #languageBar>div{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 #languageBar>div>span.languageCard{
-    width: 300px;
-    height: 350px;
+    width: 250px;
+    height: 300px;
     margin: 20px;
 
     transition: 0.5s;
@@ -226,20 +235,20 @@ article>p>span{
     box-shadow: 0px 10px 20px #B4DCED;
 }
 #languageBar>div>span.languageCard:hover{
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
 
     font-size: 3em;
     background-color: #91C9E8;
 }
 #languageBar>div>span.languageCard:hover img{
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
 }
 #languageBar>div>span.languageCard>img{
     transition: 0.5s;
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
 }
 footer{
     width: 100%;
