@@ -1,13 +1,15 @@
 var topBar = document.getElementById('topBar');
-var aside = document.getElementById('ad')
+var aside = document.getElementById('ad');
+var vi = document.getElementsByTagName('video')[0];
 addEventListener('scroll', () => {
     if (scrollY > 0) {
         topBar.style.top = '0px';
         topBar.style.opacity = '1';
-        
+        vi.pause();
     }
     else {
         topBar.style.opacity = '0';
+        vi.play();
         
     }
     var userH = window.innerHeight * 0.9
